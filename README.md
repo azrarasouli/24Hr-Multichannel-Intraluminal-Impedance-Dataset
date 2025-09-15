@@ -13,11 +13,14 @@ To ensure informative and balanced data, we selected at least four episodes for 
 This dataset was originally used in the IAI_2023 challenge, with the corresponding paper available at [paper link]. For the IAI_2023 challenge, the dataset was divided into training, testing, and hidden subsets, released sequentially: the training dataset first, followed by the testing dataset, and finally the hidden dataset during the live competition for validation. The dataset comprises 202 episodes, including 208 GER events, from 26 patients. Training and testing sets were sourced from distinct individuals, while the hidden set was randomly sampled from any patient. Episodes in the training and testing folders contain 6,001 rows, while hidden folder episodes contain 6,000 rows.
 For our new paper, the dataset remains identical to the IAI_2023 challenge dataset. However, the division differs: we randomly split the entire dataset and applied a hold-out method, reserving 20 MII episodes for testing and using the remaining 182 episodes for training and validation.
 
-| Folders	| Files	| # rows	| # columns |	type	| # Episodes |	# Subjects |	# GERs|
-|Train	MII_Train.csv|	882147	|6	|float	|147|	18|	148|
-|FLAG_GER_Train.csv|	882147|	6|	binary|			
-|Test	MII_Test.csv|	162027|	6	|Float|	27	|8	|27|
-|FLAG_GER_Test.csv|	162027|	6|	binary|			
+|Folders|Files	                |# rows	|# columns |type	|# Episodes|# Subjects|# GERs
+|Train	|MII_Train.csv	        |882147	|6	   |float	|147	   |18	      |148
+	|FLAG_GER_Train.csv	|882147	|6	   |binary	|	   |	      |
+|Test	|MII_Test.csv	        |162027	|6	   |Float	|27	   |8	      |27
+	|FLAG_GER_Test.csv	|162027	|6	   |binary	|	   |	      |
+|Hidden	|MII_Hidden.csv	        |168000	|6	   |float	|28	   |-	      |33
+	|FLAG_GER_Hidden.csv	|168000	|6	   |binary	|	   |	      |
+		
 |Hidden	MII_Hidden.csv|	168000|	6|	float	|28	|-	|33|
 	FLAG_GER_Hidden.csv	168000	6	binary			
 
